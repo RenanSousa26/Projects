@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+/*<recursos>------------------------------------------------------------------------*/
+@font-face{
+    font-family: BarlowCondensed;
+    src: url(../font/BarlowCondensed-Regular.ttf);
+}
+
+@font-face{
+    font-family: Bellefair;
+    src: url(../font/Bellefair-Regular.ttf);
+}
+
+:root{
+    --primaryColor:#0B0D17;
+    --secondaryColor: #D0D6F9;
+    --tertiaryColor: #FFFFFF;
+    --QuartinaryColor: rgba(255, 255, 255, 0.04);
+    --QuinternaryColor: rgba(255, 255, 255, 0.5021);
+
+    --font1: Bellefair;
+    --font2: BarlowCondensed;
+
+    --characterSpace1: 2.35px;
+    --characterSpace2: 2.7px;
+    --characterSpace3: 4.75px;
+}
+/*</recursos>------------------------------------------------------------------------*/
+
+/*<nav>------------------------------------------------------------------------*/
+body .navBar{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+body .navBar hr{
+    position: fixed;
+    width: calc(100% - 920px);
+    max-width: 640px;
+    min-width: 30%;
+    left:150px;
+    border: thin solid var(--tertiaryColor);
+    opacity: 0.2515;
+    border-top: none;
+    border-right: none;
+    border-left: none; 
+}
+
+body .navBar .container-img{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
+
+body .navBar .imagem img{
+    width: 48px;
+    height: 48px;
+}
+
+body .navBar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 96px;
+    background: var(--QuartinaryColor);
+    backdrop-filter: blur(40.774227142333984px);
+
+    
+    font-family: var(--font2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: var(--characterSpace2)
+    
+}
+
+body .navBar ul li, .hover-list, .menu-item{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    height: 100%;
+    transition: border-bottom 0.3s ease, border-radius 0.3s ease; 
+    border-bottom: 3px solid transparent; 
+}
+
+.hover-list:hover{
+    border-bottom: 3px solid var(--QuinternaryColor);
+}
+
+.active{
+    border-bottom: 3px solid var(--tertiaryColor) !important;
+}
+
+
+body .navBar ul li a{
+    color: var(--tertiaryColor);
+    text-decoration: none;
+}
+
+body .navBar ul li a span{
+    margin-right: 8px;
+    font-weight: 700;
+}
+/*</nav>------------------------------------------------------------------------*/
+/*<Home>------------------------------------------------------------------------*/
+.background-container{
+    background-image: url(../img/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*</Home>-----------------------------------------------------------------------*/
+
+/*<Responsividade>-----------------------------------------------------------------------*/
+
+/*<Mobile>----------------------------------------------------------------------------- */
+@media (max-width: 480px){}
+/*</Mobile>----------------------------------------------------------------------------- */
+/*<Extra small devices>----------------------------------------------------------------------------- */
+@media (min-width: 481px) and (max-width: 767px){}
+/*</Extra small devices>----------------------------------------------------------------------------- */
+/*<Small tablets>----------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px){}
+/*</Small tablets>----------------------------------------------------------------------------- */
+/*<Large tablets/laptops>----------------------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px){}
+/*</Large tablets/laptops>----------------------------------------------------------------------------- */
+/*<Desktop>----------------------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1919px){}
+/*</Desktop>----------------------------------------------------------------------------- */
+/*<Extra large screens>----------------------------------------------------------------------------- */
+@media (min-width: 1920px){}
+/*</Extra large screens>----------------------------------------------------------------------------- */
+
+/*</Responsividade>-----------------------------------------------------------------------*/
