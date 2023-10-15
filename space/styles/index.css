@@ -127,6 +127,7 @@ body .navBar ul li a span{
     background-image: url(../img/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 
 body section{
@@ -210,6 +211,7 @@ body section .btn-explore button:hover{
     background-image: url(../img/assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 /*</Destination>-----------------------------------------------------------------------*/
 /*<Crew>-----------------------------------------------------------------------*/
@@ -217,6 +219,7 @@ body section .btn-explore button:hover{
     background-image: url(../img/assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 /*</Crew>-----------------------------------------------------------------------*/
 /*<Technology>-----------------------------------------------------------------------*/
@@ -224,6 +227,7 @@ body section .btn-explore button:hover{
     background-image: url(../img/assets/technology/background-technology-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 /*</Technology>-----------------------------------------------------------------------*/
 /*<Responsividade>-----------------------------------------------------------------------*/
@@ -239,12 +243,12 @@ body section .btn-explore button:hover{
 /*<nav>------------------------------------------------------------------------*/
 body .navBar {
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     transition: 0.8s;
 }
 
 body .navBar ul {
-    width: 58%;
+    width: 60%;
     height: 96px;
     font-size: 14px;
     transition: 0.8s;
@@ -279,6 +283,8 @@ body .navBar ul li, .menu-item {
     background-image: url(../img/assets/home/background-home-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.5s;
+    overflow-y: auto;
 }
 
 body section {
@@ -314,7 +320,7 @@ body section div article {
 body section .btn-explore{
     display: flex;
     justify-content: center;
-    margin-bottom: 20%;
+    
 }
 
 body section .btn-explore button {
@@ -354,6 +360,7 @@ body .navBar hr{
     background-image: url(../img/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: auto;
+    transition: 0.5s;
 }
 
 body section {
