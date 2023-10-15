@@ -127,7 +127,7 @@ body .navBar ul li a span{
     background-image: url(../img/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 body section{
@@ -211,7 +211,7 @@ body section .btn-explore button:hover{
     background-image: url(../img/assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 0.5s;
+    transition: 1s;
 }
 /*</Destination>-----------------------------------------------------------------------*/
 /*<Crew>-----------------------------------------------------------------------*/
@@ -219,7 +219,7 @@ body section .btn-explore button:hover{
     background-image: url(../img/assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 0.5s;
+    transition: 1s;
 }
 /*</Crew>-----------------------------------------------------------------------*/
 /*<Technology>-----------------------------------------------------------------------*/
@@ -283,28 +283,30 @@ body .navBar ul li, .menu-item {
     background-image: url(../img/assets/home/background-home-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 0.5s;
+    transition: 1s;
     overflow-y: auto;
 }
 
 body section {
     display: grid;
-    margin: 0 auto;
-    width: 60%;
-    height: 100%;
+    width: 100%;
+    height: 80%;
     padding-right: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
+    justify-content: center;
 }
 
 body section .justify {
     display: flex;
-    text-align: center;
+    text-align: justify;
     width: 100%;
     height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-bottom: 0%;
-    justify-content: center;
     align-items: center;
+    margin-top: 20%;
 }
 
 body section div h5 {
@@ -315,6 +317,8 @@ body section div h5 {
 body section div article {
     font-size: 16px;
     line-height: 28px;
+    text-align: center;
+    width: 420px;
 }
 
 body section .btn-explore{
@@ -360,7 +364,7 @@ body .navBar hr{
     background-image: url(../img/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: auto;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 body section {
