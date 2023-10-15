@@ -12,3 +12,10 @@ function selectLink(){
 menuItem.forEach((item) => 
     item.addEventListener('click', selectLink)
 )
+
+//serve para rolar o scroll para o topo da página:
+window.addEventListener("resize", function() {
+    if (window.innerWidth >= 992) {
+      window.scrollTo(0, 0);
+    }
+});
