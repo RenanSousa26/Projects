@@ -238,7 +238,54 @@ body section .btn-explore button:hover{
 
 @media (min-width: 992px) and (max-width: 1199px){
 
+/*<nav>------------------------------------------------------------------------*/
+body .navBar ul {
+    width: 70%;
+    font-size: 14px;
+    transition: 0.8s;
+}
 
+body .navBar hr{
+    width: 32%;
+    transition: 0.5s;
+}
+/*</nav>------------------------------------------------------------------------*/
+/*<Home>------------------------------------------------------------------------*/
+.background-container{
+    background-image: url(../img/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+body section {
+    padding-left: 80px;
+    padding-right: 180px;
+    transition: 0.5s;
+}
+
+body section div h1 {
+    font-size: 120px;
+    transition: 0.8s;
+}
+
+body section div h5 {
+    font-size: 18px;
+    transition: 0.8s;
+}
+
+body section .btn-explore button {
+    width: 240px;
+    height: 240px;
+    border-radius: 240px;
+    font-size: 24px;
+}
+
+body section .btn-explore button:hover{
+    box-shadow: 0px 0px 1px 40px var(--buttonHoverColor);
+    cursor: pointer;
+}
+
+/*</Home>-----------------------------------------------------------------------*/
 
 }
 /*</Large tablets/laptops>----------------------------------------------------------------------------- */
