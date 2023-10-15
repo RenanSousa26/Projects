@@ -287,6 +287,16 @@ body .navBar ul li, .menu-item {
     overflow-y: auto;
 }
 
+::-webkit-scrollbar{
+    width: 5px;
+    background: var(--primaryColor);
+}
+
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: rgba(35,59,90,255);
+}
+
 body section {
     display: grid;
     width: 100%;
@@ -331,6 +341,7 @@ body section .btn-explore button {
     width: 242px;
     height: 242px;
     border-radius: 274px;
+    margin-bottom: 10%;
 }
 
 body section .btn-explore button:hover {
