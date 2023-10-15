@@ -1,5 +1,4 @@
 const links = document.querySelectorAll('a');
-const li = document.getElementsByTagName('li');
 const menuItem = document.querySelectorAll('.menu-item');
 
 function selectLink(){
@@ -19,3 +18,20 @@ window.addEventListener("resize", function() {
       window.scrollTo(0, 0);
     }
 });
+
+
+        const mobileMenus = document.querySelector('.mobile-menu');
+        const ul = document.querySelector('ul');
+        const li = document.querySelectorAll('li');
+        
+
+        mobileMenus.addEventListener('click', () => {
+            ul.classList.toggle('active-nav');
+
+            li.forEach((item) => 
+            item.classList.toggle('active-li')
+            )
+        });
+        
+
+
