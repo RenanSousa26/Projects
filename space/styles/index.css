@@ -4,6 +4,14 @@
     box-sizing: border-box; 
 }
 
+html, body{
+    width: 100%;
+    height: 100%;                        /* para falta de suporte */  
+    height: -webkit-calc(100% - 100px);  /* para Chrome */
+    height: -moz-calc(100% - 100px);     /* para Firefox */
+    height: calc(100% - 100px);          /* para suporte nativo */
+}
+
 /*<recursos>------------------------------------------------------------------------*/
 @font-face{
     font-family: BarlowCondensed;
@@ -21,9 +29,10 @@
     --tertiaryColor: #FFFFFF;
     --QuartinaryColor: rgba(255, 255, 255, 0.04);
     --QuinternaryColor: rgba(255, 255, 255, 0.5021);
-
+    --buttonHoverColor: rgba(255, 255, 255, 0.1036);
     --font1: Bellefair;
     --font2: BarlowCondensed;
+    --font3: Barlow;
 
     --characterSpace1: 2.35px;
     --characterSpace2: 2.7px;
@@ -42,11 +51,9 @@ body .navBar{
 }
 
 body .navBar hr{
-    position: fixed;
-    width: calc(100% - 920px);
-    max-width: 640px;
-    min-width: 30%;
-    left:150px;
+    position: relative;
+    width: 38%;
+    left: 30px;
     border: thin solid var(--tertiaryColor);
     opacity: 0.2515;
     border-top: none;
@@ -70,8 +77,8 @@ body .navBar ul{
     list-style-type: none;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    height: 96px;
+    width: 62.5%;
+    height: 80px;
     background: var(--QuartinaryColor);
     backdrop-filter: blur(40.774227142333984px);
 
@@ -91,7 +98,8 @@ body .navBar ul li, .menu-item{
     align-items: center;
     height: 100%;
     transition: border-bottom 0.3s ease, border-radius 0.3s ease; 
-    border-bottom: 3px solid transparent; 
+    border-bottom: 3px solid transparent;
+    transition: 0.4s;
 }
 
 .menu-item:hover{
@@ -122,8 +130,99 @@ body .navBar ul li a span{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*</Home>-----------------------------------------------------------------------*/
 
+body section{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 160px;
+    padding-left: 160px;
+    padding-bottom: 50px;
+}
+
+body section .justify{
+    display: grid;
+    text-align: justify;
+    width: 20%;
+}
+
+body section div h1{
+    color: var(--tertiaryColor);
+    font-family: var(--font1);
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body section div h5{
+    color: var(--secondaryColor);
+    font-family: var(--font2);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: var(--characterSpace3);
+}
+
+body section div article{
+    color: var(--secondaryColor);
+    font-family: var(--font3);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+body section .btn-explore button{
+    width: 274px;
+    height: 274px;
+    flex-shrink: 0;
+
+    border-radius: 274px;
+    border: none;
+    background: var(--tertiaryColor);
+
+    color: var(--primaryColor);
+    font-family: var(--font1);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+body section .btn-explore button:hover{
+    box-shadow: 0px 0px 1px 80px var(--buttonHoverColor);
+    cursor: pointer;
+}
+
+/*</Home>-----------------------------------------------------------------------*/
+/*<Destination>-----------------------------------------------------------------------*/
+.background-container2{
+    background-image: url(../img/assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*</Destination>-----------------------------------------------------------------------*/
+/*<Crew>-----------------------------------------------------------------------*/
+.background-container3{
+    background-image: url(../img/assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*</Crew>-----------------------------------------------------------------------*/
+/*<Technology>-----------------------------------------------------------------------*/
+.background-container4{
+    background-image: url(../img/assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*</Technology>-----------------------------------------------------------------------*/
 /*<Responsividade>-----------------------------------------------------------------------*/
 
 /*<Mobile>----------------------------------------------------------------------------- */
@@ -136,7 +235,12 @@ body .navBar ul li a span{
 @media (min-width: 768px) and (max-width: 991px){}
 /*</Small tablets>----------------------------------------------------------------------------- */
 /*<Large tablets/laptops>----------------------------------------------------------------------------- */
-@media (min-width: 992px) and (max-width: 1199px){}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+
+
+}
 /*</Large tablets/laptops>----------------------------------------------------------------------------- */
 /*<Desktop>----------------------------------------------------------------------------- */
 @media (min-width: 1200px) and (max-width: 1919px){}
