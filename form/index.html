@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <script src="index.js" defer></script>
+</head>
+<body>
+        <div class="container">
+            <form id="form-confirm">
+                <div class="text-subscribe">
+                    <h1>Stay updated!</h1>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                    <table>
+                        <tr>
+                            <td class="icon"><img src="img/icon-list.svg" alt="icon-list"></td>
+                            <td>Product discovery and building what matters</td>
+                        </tr>
+                        <tr>
+                            <td class="icon"><img src="img/icon-list.svg" alt="icon-list"></td>
+                            <td>Measuring to ensure updates are a success</td>
+                        </tr>
+                        <tr>
+                            <td class="icon"><img src="img/icon-list.svg" alt="icon-list"></td>
+                            <td>And much more!</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="email-subscribe">
+                    <span id="emailError"></span>
+                    <label for="email">Email address</label>
+                    <input id="email" type="email" placeholder="email@company.com">
+                    <button type="button" id="subscribeBtn" class="buttonDisab" disabled>Subscribe to monthly newsletter</button>
+                </div>
+            </form>
+            <div id="fade" class="hide"></div>
+            <section id="modal" class="hide">
+                <img src="img/icon-success.svg" alt="">
+                <h1>Thanks for subscribing!</h1>
+                <p id="confirm"></p>
+                <button type="submit" id="dismiss" class="button2">Dismiss message</button>
+            </section>
+            
+            <div class="illustration"></div>
+        
+        </div>
+</body>
+</html>

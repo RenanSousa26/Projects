@@ -1,0 +1,414 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:Roboto-Bold ;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+:root{
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    cursor: url(img/cursor.png), pointer;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: var(--CharcoalGrey);
+}
+
+body  .container{
+
+    display: flex;
+    background-color: var(--White);
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 10px 20px 20px var(--DarkSlateGrey);
+    width: 55rem;
+    height: 35rem;
+    padding: 20px;
+    
+}
+
+body .container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 100%;
+
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+body .container form .text-subscribe{
+    display: grid;
+    
+    width: 22.2rem;
+    height: 15rem;
+
+    text-align: justify;
+}
+
+body .container form .text-subscribe p{
+    font-size: 16px;
+    font-family: Roboto-Regular;
+}
+
+body .container form .text-subscribe table, p{
+    font-size: 16px;
+    font-family: Roboto-Regular;
+}
+
+body .container form .text-subscribe table img{
+    margin-right: 10px; 
+}
+
+body .container form .text-subscribe h1{
+    color: var(--DarkSlateGrey);
+    font-weight: 100 700;
+    font-family: Roboto-Bold;
+    font-size: 56px;
+}
+
+body .container form .email-subscribe{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 23rem;
+    margin-left: 15px;;
+}
+
+body .container form .email-subscribe label{
+    color: var(--DarkSlateGrey);
+    font-weight: 100 700;
+    font-family: Roboto-Bold;
+    font-size: 12px;
+}
+
+body .container form .email-subscribe span{
+    
+    display: flex;
+    position: absolute;
+    color: var(--Tomato);
+    font-family: Roboto-Bold;
+    font-size: 12px;
+    right: 0px;
+    
+
+}
+
+body .container form .email-subscribe input:invalid{
+    background-color: #ffe8e6;
+    border: 1px solid var(--Tomato) !important;
+    color:var(--Tomato) !important;
+}
+
+body .container form .email-subscribe input:focus{
+    border: 1px solid black;
+    outline: none;
+}
+
+body .container form .email-subscribe input{
+    margin-top: 10px;
+    border: 1px solid var(--Grey);
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 16px;
+
+    font-family: Roboto-Regular;
+}
+
+
+body .container form .email-subscribe .buttonDisab, .buttonHabi, .button2{
+    border: none;
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    border-radius: 8px;
+    height: 50px;
+    font-family: Roboto-Bold;
+    cursor: url(img/cursor.png), pointer;
+    margin-bottom: 30px;
+    
+}
+
+body .container form .email-subscribe .buttonHabi:hover, .button2:hover{
+    background: linear-gradient(45deg,#ff5478, #ff6841);
+    box-shadow: 0px 4px 20px 0px #ff6841;
+    cursor: url(img/pointer.png), pointer;
+}
+
+
+body .container .illustration{
+    background-image: url(img/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 40%;
+    height: 100%;
+
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--CharcoalGrey) ;
+    z-index: 5;
+}
+
+#modal button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#modal p{
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+#modal h1{
+    line-height: 3.6rem;
+}
+
+#modal img{
+    margin-bottom: 30px;
+}
+
+#modal{
+    position:fixed;
+    left:50%;
+    top: 50%;
+    display: grid;
+    transform: translate(-50%, -50%);
+    background-color: var(--White);
+    box-shadow: 10px 20px 20px var(--DarkSlateGrey);
+    border-radius: 30px;
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    height: 520px;
+    padding: 4rem;
+    align-items: center;
+}
+
+.container section h1{
+    color: var(--DarkSlateGrey);
+    font-family: Roboto-Bold;
+    font-size: 55px;
+}
+
+#modal.hide, #fade.hide{
+    opacity:0;
+    pointer-events: none;
+}
+
+#fade, #modal{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media screen and (max-width: 800px) {
+
+
+    body .container .illustration{
+
+        background-image: url(img/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 100%;
+        height: 40%;
+    
+    }
+
+    body{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        cursor: url(img/cursor.png), pointer;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background: var(--CharcoalGrey);
+    }
+    
+    body  .container{
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        min-width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        border-radius: 0;
+        padding: 0px;
+    }
+
+    body .container form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        height: 60%;
+    
+        padding: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    body .container form .text-subscribe{
+        display: grid;
+        
+        width: 100%;
+        height: auto;
+        text-align: left;
+        padding-left: 0px;
+        padding-right: 20px;
+        line-height: 1.3rem;
+    }
+
+    body .container form .text-subscribe p{
+        font-size: 12px;
+        font-family: Roboto-Regular;
+        margin-bottom: 10px;
+    }
+    
+    body .container form .text-subscribe table, p{
+        font-size: 12px;
+        font-family: Roboto-Regular;
+    }
+
+    body .container form .text-subscribe table tr{
+        margin-bottom: 8px;
+        display: flex;
+    }
+    
+    body .container form .text-subscribe table img{
+        margin-right: 8px; 
+        width: 15px;
+        height: 15px;
+    }
+
+    table{
+        padding-right: 10px;
+    }
+    
+    body .container form .text-subscribe h1{
+        color: var(--DarkSlateGrey);
+        font-weight: 100 700;
+        font-family: Roboto-Bold;
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    body .container form .email-subscribe{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    
+    body .container form .email-subscribe label{
+        color: var(--DarkSlateGrey);
+        font-weight: 100 700;
+        font-family: Roboto-Bold;
+        font-size: 10px;
+    }
+    
+    body .container form .email-subscribe span{
+        
+        display: flex;
+        position: absolute;
+        color: var(--Tomato);
+        font-family: Roboto-Bold;
+        font-size: 10px;
+    }
+
+    body .container form .email-subscribe input{
+        margin-top: 10px;
+        border: 1px solid var(--Grey);
+        color: black;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        padding-left: 20px;
+        height: 50px;
+        font-size: 12px;
+    
+        font-family: Roboto-Regular;
+    }
+
+    #modal button{
+        margin-top: 200px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    
+    #modal p{
+        margin-top: 20px;
+        line-height: 18px;
+    }
+    
+    #modal h1{
+        line-height: 2.6rem;
+        font-size: 40px;
+    }
+    
+    #modal img{
+        margin-bottom: 50px;
+    }
+    
+    #modal{
+        position:fixed;
+        left:50%;
+        top: 50%;
+        display: grid;
+        transform: translate(-50%, -50%);
+        background-color: var(--White);
+        box-shadow: none;
+        border-radius: 0px;
+        z-index: 10;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        padding: 20px;
+        align-items: center;
+        align-content: center;
+    }
+    
+}
+
