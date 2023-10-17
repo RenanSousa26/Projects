@@ -44,13 +44,6 @@ body{
     cursor: pointer;
 }
 
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: var(--tertiaryColor);
-    margin: 8px;
-}
-
 body .navBar{
     display: flex;
     flex-direction: row-reverse;
@@ -310,13 +303,41 @@ body .navBar .mobile-menu{
     z-index: 2;
 }
 
+body .navBar .mobile-menu div{
+    width: 24px;
+    height: 3px;
+    background: var(--tertiaryColor);
+    margin: 8px;
+}
+
 body .navBar .container-img {
     display: flex;
     justify-content: normal;
     width: 150px;
 }
 
+body .navBar .rotate{
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
 
+body .navBar .mobile-menu .ex1{
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+body .navBar .mobile-menu .ex2{
+    position: fixed;
+    transform: rotate(90deg);
+    top: 0px;
+    transition: 0.5s;
+}
+
+body .navBar .mobile-menu .ex3{
+    top: 0px;
+    position: fixed;
+    transition: 0.5s;
+}
 
 /*</nav>------------------------------------------------------------------------*/
     /*<Home>------------------------------------------------------------------------*/
@@ -463,13 +484,41 @@ body .navBar .mobile-menu{
     z-index: 2;
 }
 
+body .navBar .mobile-menu div{
+    width: 24px;
+    height: 3px;
+    background: var(--tertiaryColor);
+    margin: 8px;
+}
+
+body .navBar .rotate{
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+body .navBar .mobile-menu .ex1{
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+body .navBar .mobile-menu .ex2{
+    position: fixed;
+    transform: rotate(90deg);
+    top: 0px;
+    transition: 0.5s;
+}
+
+body .navBar .mobile-menu .ex3{
+    top: 0px;
+    position: fixed;
+    transition: 0.5s;
+}
+
 body .navBar .container-img {
     display: flex;
     justify-content: normal;
     width: 150px;
 }
-
-
 
 /*</nav>------------------------------------------------------------------------*/
     /*<Home>------------------------------------------------------------------------*/
