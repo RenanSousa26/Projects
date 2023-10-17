@@ -235,6 +235,7 @@ body section .btn-explore button:hover{
     transition: 0.5s;
 }
 /*</Technology>-----------------------------------------------------------------------*/
+
 /*<Responsividade>-----------------------------------------------------------------------*/
 
 /*<Mobile>----------------------------------------------------------------------------- */
@@ -249,6 +250,7 @@ body .navBar{
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -308,6 +310,7 @@ body .navBar .mobile-menu div{
     height: 3px;
     background: var(--tertiaryColor);
     margin: 8px;
+    transition: 0.5s;
 }
 
 body .navBar .container-img {
@@ -340,7 +343,7 @@ body .navBar .mobile-menu .ex3{
 }
 
 /*</nav>------------------------------------------------------------------------*/
-    /*<Home>------------------------------------------------------------------------*/
+/*<Home>------------------------------------------------------------------------*/
 .background-container{
     background-image: url(../img/assets/home/background-home-mobile.jpg);
     background-repeat: no-repeat;
@@ -431,6 +434,7 @@ body .navBar{
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -489,6 +493,7 @@ body .navBar .mobile-menu div{
     height: 3px;
     background: var(--tertiaryColor);
     margin: 8px;
+    transition: 0.5s;
 }
 
 body .navBar .rotate{
@@ -511,7 +516,7 @@ body .navBar .mobile-menu .ex2{
 body .navBar .mobile-menu .ex3{
     top: 0px;
     position: fixed;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 body .navBar .container-img {
