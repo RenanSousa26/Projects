@@ -82,6 +82,7 @@ body .navBar ul{
     align-items: center;
     width: 62.5%;
     height: 80px;
+    gap: 6%;
     background: var(--QuartinaryColor);
     backdrop-filter: blur(40.774227142333984px);
 
@@ -97,7 +98,6 @@ body .navBar ul{
 
 body .navBar ul li, .menu-item{
     display: flex;
-    margin: 20px;
     align-items: center;
     height: 100%;
     transition: border-bottom 0.3s ease, border-radius 0.3s ease; 
@@ -241,7 +241,6 @@ body section .btn-explore button:hover{
 /*<Mobile>----------------------------------------------------------------------------- */
 @media (max-width: 480px){
 
-/*<nav>------------------------------------------------------------------------*/
 
 body{
     width: 100vw;
@@ -250,9 +249,9 @@ body{
     overflow-y: hidden !important;
 }
 
+
 @media (max-width: 320px){
 
-    /*<nav>------------------------------------------------------------------------*/
     
     body{
         width: 100vw;
@@ -264,11 +263,7 @@ body{
     body .navBar{
         margin-bottom: 0px !important;
     }
-
-    /*</Home>-----------------------------------------------------------------------*/
-    }
-
-/*</Home>-----------------------------------------------------------------------*/
+}
 }
 /*</Mobile>----------------------------------------------------------------------------- */
 /*<Extra small devices>----------------------------------------------------------------------------- */
@@ -301,6 +296,7 @@ body .navBar ul{
     right: 0;
     width: 70%;
     height: 100vh;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -342,6 +338,10 @@ body .navBar ul li{
 body .navBar ul li.active-li{
     opacity: 1 !important;
     z-index: 3;
+}
+
+body .navBar ul li a {
+    width: 100% !important;
 }
 
 body .navBar hr{
@@ -484,6 +484,7 @@ body .navBar {
 body .navBar ul {
     width: 60%;
     height: 96px;
+    gap: 30px;
     font-size: 14px;
     transition: 0.8s;
 }
@@ -501,9 +502,6 @@ body .navBar hr{
 body .navBar ul li, .menu-item {
     display: flex;
     align-items: center;
-    margin: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
     height: 100%;
     transition: border-bottom 0.3s ease, border-radius 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -643,11 +641,51 @@ body section .btn-explore button:hover{
 
 }
 /*</Large tablets/laptops>----------------------------------------------------------------------------- */
-/*<Desktop>----------------------------------------------------------------------------- */
-@media (min-width: 1200px) and (max-width: 1919px){}
-/*</Desktop>----------------------------------------------------------------------------- */
+
 /*<Extra large screens>----------------------------------------------------------------------------- */
-@media (min-width: 1920px){}
+@media (min-width: 1920px){
+
+    body .navBar ul{
+        font-size: 24px;
+    }
+
+    body .navBar ul {
+        width: 70%;
+        height: 130px;
+        gap: 7%;
+    }
+
+    body section div h1 {
+        font-size: 230px;
+    }
+
+    body section div h5 {
+        font-size: 50px;
+    }
+
+    body section div article {
+        color: var(--secondaryColor);
+        font-family: var(--font3);
+        font-size: 29px;
+    }
+
+    body section .btn-explore button {
+        width: 347px;
+        height: 347px;
+        border-radius: 347px;
+        font-size: 40px;
+    }
+
+    body .navBar .container-img {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+    }
+
+    body .navBar .container-img img{
+        width: 60px;
+    }
+}
 /*</Extra large screens>----------------------------------------------------------------------------- */
 
 /*</Responsividade>-----------------------------------------------------------------------*/
