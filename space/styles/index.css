@@ -241,19 +241,7 @@ body section .btn-explore button:hover{
 /*<Mobile>----------------------------------------------------------------------------- */
 @media (max-width: 480px){
 
-    /*<nav>------------------------------------------------------------------------*/
-
-body .navBar{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+/*<nav>------------------------------------------------------------------------*/
 
 body{
     width: 100vw;
@@ -262,168 +250,29 @@ body{
     overflow-y: hidden !important;
 }
 
-body .navBar ul{
-    position: fixed;
-    top: 0vh;
-    bottom: 0vh;
-    right: 0;
-    width: 70%;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    overflow: hidden;
-    z-index: 1;
-}
+@media (max-width: 320px){
 
-body .navBar ul.active-nav{
-    transform: translateX(0) !important;
-    overflow: hidden;
-}
-
-body .navBar ul li{
-    margin-left: 0;
-    opacity: 0; 
-    transition: 0s;
-}
-
-body .navBar ul li.active-li{
-    opacity: 1 !important;
-    z-index: 3;
-}
-
-
-body .navBar hr{
-    display: none;
-    transition: 0.8;
-}
-
-body .navBar .mobile-menu{
-    display: block;
-    z-index: 2;
-}
-
-body .navBar .mobile-menu div{
-    width: 24px;
-    height: 3px;
-    background: var(--tertiaryColor);
-    margin: 8px;
-    transition: 0.5s;
-}
-
-body .navBar .container-img {
-    display: flex;
-    justify-content: normal;
-    width: 150px;
-}
-
-body .navBar .rotate{
-    transform: rotate(45deg);
-    transition: 0.5s;
-}
-
-body .navBar .mobile-menu .ex1{
-    transform: rotate(90deg);
-    transition: 0.5s;
-}
-
-body .navBar .mobile-menu .ex2{
-    position: fixed;
-    transform: rotate(90deg);
-    top: 0px;
-    transition: 0.5s;
-}
-
-body .navBar .mobile-menu .ex3{
-    top: 0px;
-    position: fixed;
-    transition: 0.5s;
-}
-
-/*</nav>------------------------------------------------------------------------*/
-/*<Home>------------------------------------------------------------------------*/
-.background-container{
-    background-image: url(../img/assets/home/background-home-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 1s;
-    overflow-y: auto;
-}
-
-::-webkit-scrollbar{
-    width: 5px;
-    background: var(--primaryColor);
-}
-
-::-webkit-scrollbar-thumb{
-    width: 5px;
-    background-color: rgba(35,59,90,255);
-}
-
-body section {
-    display: grid;
-    width: 100%;
-    height: 80%;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    justify-content: center;
-}
-
-body section .justify {
-    display: flex;
-    text-align: justify;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 0%;
-    align-items: center;
-    margin-top: 20%;
-}
-
-body section div h1 {
-    font-size: 80px;
-    line-height: 100px;
-}
-
-body section div h5 {
-    font-size: 16px;
-    letter-spacing: 2.7px;
-}
-
-body section div article {
-    font-size: 15px;
-    line-height: 25px;
-    text-align: center;
-    width: 318px;
-}
-
-body section .btn-explore{
-    display: flex;
-    justify-content: center;
+    /*<nav>------------------------------------------------------------------------*/
     
-}
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
 
-body section .btn-explore button {
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    margin-bottom: 10%;
-    font-size: 20px;
-}
+    body .navBar{
+        margin-bottom: 0px !important;
+    }
 
-body section .btn-explore button:hover {
-    box-shadow: 0px 0px 1px 20px var(--buttonHoverColor);
-}
+    /*</Home>-----------------------------------------------------------------------*/
+    }
 
 /*</Home>-----------------------------------------------------------------------*/
 }
 /*</Mobile>----------------------------------------------------------------------------- */
 /*<Extra small devices>----------------------------------------------------------------------------- */
-@media (min-width: 481px) and (max-width: 767px){
+@media (min-width: 320px) and (max-width: 767px){
 
 /*<nav>------------------------------------------------------------------------*/
 
@@ -464,19 +313,36 @@ body .navBar ul{
 body .navBar ul.active-nav{
     transform: translateX(0) !important;
     overflow: hidden;
+    display: flex;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 130px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.active {
+    border-right: 3px solid var(--tertiaryColor) !important;
+    border-bottom: none !important;
+}
+
+.menu-item:hover{
+    border-bottom: none;
 }
 
 body .navBar ul li{
     margin-left: 0;
     opacity: 0; 
     transition: 0s;
+    width: 100%;
+    height: 10%;
+    margin: 0;
 }
 
 body .navBar ul li.active-li{
     opacity: 1 !important;
     z-index: 3;
 }
-
 
 body .navBar hr{
     display: none;
@@ -499,6 +365,7 @@ body .navBar .mobile-menu div{
 body .navBar .rotate{
     transform: rotate(45deg);
     transition: 0.5s;
+    position: fixed;
 }
 
 body .navBar .mobile-menu .ex1{
@@ -522,7 +389,7 @@ body .navBar .mobile-menu .ex3{
 body .navBar .container-img {
     display: flex;
     justify-content: normal;
-    width: 150px;
+    width: 100%;
 }
 
 /*</nav>------------------------------------------------------------------------*/
