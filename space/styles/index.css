@@ -263,7 +263,7 @@ body section .btn-explore button:hover{
 }
 
 .background-container2 .container-destination{
-    display: flex;
+    display: grid;
     flex-direction: column;
     width: 50%;
     height: 100%;
