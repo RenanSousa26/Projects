@@ -261,6 +261,53 @@ body section .btn-explore button:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.background-container2 .container-destination{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.background-container2 .container-destination .nav-destination{
+    display: flex;
+    font-size: 16px;
+    gap: 16px;
+    color: var(--secondaryColor);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: var(--characterSpace2);
+    
+}
+
+.background-container2 .container-destination h1{
+    font-size: 100px;
+}
+
+.background-container2 .container-destination article{
+    color: var(--secondaryColor);
+    font-family: var(--font3);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 420px;
+}
+
+.background-container2 .container-destination .info-destination{
+    display: flex;
+    gap: 80px;
+}
+
+.container-destination .info-destination .dist-destination{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-destination .info-destination .time-destination{
+    display: flex;
+    flex-direction: column;
+}
 /*</Destination>-----------------------------------------------------------------------*/
 /*<Crew>-----------------------------------------------------------------------*/
 .background-container3{
