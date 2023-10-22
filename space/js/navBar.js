@@ -22,7 +22,7 @@ window.addEventListener("resize", function() {
 
         const mobileMenus = document.querySelector('.mobile-menu');
         const ul = document.querySelector('ul');
-        const li = document.querySelectorAll('li');
+        const a = document.querySelectorAll('a');
         const line1 = document.querySelector('#line1');
         const line2 = document.querySelector('#line2');
         const line3 = document.querySelector('#line3');
@@ -36,7 +36,7 @@ window.addEventListener("resize", function() {
             line2.classList.toggle('ex2');
             line3.classList.toggle('ex3');
 
-            li.forEach((item) => 
+            a.forEach((item) => 
             item.classList.toggle('active-li')
             )
         });
