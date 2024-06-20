@@ -1829,7 +1829,6 @@ body{
         user-select: none;
         position: relative;
         flex-wrap: nowrap;
-        margin-bottom: 30px;
     }
 
     .container-header {
