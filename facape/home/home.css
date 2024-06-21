@@ -1829,7 +1829,6 @@ body{
         user-select: none;
         position: relative;
         flex-wrap: nowrap;
-        padding-bottom: 10vh;
     }
 
     .container-header {
