@@ -95,3 +95,13 @@ function ativarMidiasMobile(number){
         appsMobile.style.display="flex";
     }
 }
+
+window.addEventListener("resize", function() {
+    if (window.innerWidth > 767 && recados.style.display == "flex") {
+        fechar();
+    }
+
+    if (window.innerWidth > 767 && appsMobile.style.display == "flex") {
+        fechar();
+    }
+});

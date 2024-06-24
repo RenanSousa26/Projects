@@ -71,24 +71,14 @@ body{
     position: relative;
     display: none;
     background: #fff;
-    width: 50%;
-    height: 350px;
+    width: 80%;
+    height: 400px;
     border-radius: 10px;
     padding: 30px;
     overflow: hidden;
     align-items: center;
     transition: 0.5s;
     border: 1px solid white;
-}
-
-.caixa-app .circulo-app {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: #213E98;
-    border-radius: 20px;
-    right: -215px;
-    bottom: -306px;
 }
 
 .caixa-app .faixa-app {
@@ -137,23 +127,25 @@ body{
     color: #213e98;
     font-weight: 600;
     letter-spacing: 2px;
+    font-size: 18px;
 }
 
 .organizar-colunar div p {
     padding-left: 10px;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .container-organizar .box-info-app {
-    width: 60%;
+    width: 42%;
     height: 250px;
     position: relative;
     top: 14px;
     padding-left: 20px;
 }
 
-.box-info-app h1{
-    font-size: 38px;
+.box-info-app h1 {
+    font-size: 28px;
     color: #213e98;
     font-family: math;
     letter-spacing: 6px;
@@ -192,17 +184,19 @@ body{
     width: fit-content;
     height: fit-content;
     font-size: 42px;
-    padding: 10px;
+    padding: 10px 30px;
     color: white;
+    background: #1956B1;
     position: absolute;
-    right: 12px;
+    right: 17px;
     bottom: 12px;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 10px;
 }
 
-.buttom-acessar:hover{
-    transform: scale(1.1);
+.caixa-app .buttom-acessar:hover{
+    background: #213E98;
 }
 
 .buttom-acessar:active{
@@ -379,8 +373,8 @@ body{
 }
 
 .container-informacao .text-1 {
-    padding-left: 42px;
-    font-size: 12px;
+    padding-left: 20px;
+    font-size: 10px;
     color: #000000bd;
     text-anchor: end;
     text-transform: uppercase;
@@ -391,7 +385,7 @@ body{
 }
 
 .container-informacao .text-2 {
-    font-size: 12px;
+    font-size: 10px;
     color: #000000bd;
     text-anchor: end;
     text-transform: uppercase;
@@ -1003,8 +997,8 @@ body{
 }
 
 .container-informacao .text-1 {
-    padding-left: 70px;
-    font-size: 18px;
+    padding-left: 30px;
+    font-size: 14px;
     color: #000000bd;
     text-anchor: end;
     text-transform: uppercase;
@@ -1015,7 +1009,7 @@ body{
 }
 
 .container-informacao .text-2 {
-    font-size: 18px;
+    font-size: 14px;
     color: #000000bd;
     text-anchor: end;
     text-transform: uppercase;
@@ -1058,6 +1052,128 @@ body{
     display: flex;
     gap: 50px;
     transition: 0.5s;
+}
+
+.escurece-tela .manuais-wifi {
+    position: relative;
+    width: 60%;
+    height: 480px;
+    background: #ffffff;
+    z-index: 11;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    transition: 0.5s;
+}
+
+.manuais-wifi .box-img {
+    width: 150px;
+    height: 150px;
+    color: #213e98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.manuais-wifi .fechar-manual {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+.manuais-wifi .fechar-manual img {
+    width: 100%;
+}
+
+.escurece-tela .caixa-app {
+    position: relative;
+    display: none;
+    background: #fff;
+    width: 80%;
+    height: 550px;
+    border-radius: 10px;
+    padding: 30px;
+    overflow: hidden;
+    align-items: center;
+    transition: 0.5s;
+    border: 1px solid white;
+}
+
+.caixa-app .buttom-acessar {
+    width: fit-content;
+    height: fit-content;
+    font-size: 42px;
+    padding: 20px 50px;
+    color: white;
+    background: #1956B1;
+    position: absolute;
+    right: 17px;
+    bottom: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.caixa-app .box-img-app {
+    width: 40%;
+    height: 400px;
+    background: linear-gradient(209deg, #213e98, #172d5c);
+    border-radius: 10px;
+    top: 14px;
+    position: relative;
+}
+
+.caixa-app .fechar-app {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.container-organizar .box-info-app {
+    width: 50%;
+    height: 370px;
+    position: relative;
+    top: 0px;
+    padding-left: 36px;
+}
+
+.box-info-app h1 {
+    font-size: 52px;
+    color: #213e98;
+    font-family: math;
+    letter-spacing: 6px;
+}
+
+.organizar-colunar div h3 {
+    color: #213e98;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
+.organizar-colunar div p {
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .container-body .container-right {
@@ -1336,6 +1452,11 @@ body{
     gap: 30px;
 }
 
+.fullhd {
+    font-size: 16px !important;
+    text-align: center;
+}
+
 .Container-outros .container-agrupar {
     width: 100%;
     height: 510px;
@@ -1469,12 +1590,32 @@ body{
             position: relative;
             display: none;
             background: #fff;
-            width: 68%;
-            height: 350px;
+            width: 80%;
+            height: 400px;
             border-radius: 10px;
             padding: 30px;
             overflow: hidden;
             align-items: center;
+        }
+
+        .box-info-app h1 {
+            font-size: 24px;
+            color: #213e98;
+            font-family: math;
+            letter-spacing: 6px;
+        }
+
+        .organizar-colunar div h3 {
+            color: #213e98;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 18px;
+        }
+        
+        .organizar-colunar div p {
+            padding-left: 10px;
+            font-weight: 600;
+            font-size: 14px;
         }
         
         .container-informacao .circulo {
@@ -1492,7 +1633,7 @@ body{
         }
         
         .container-informacao .text-2 {
-            font-size: 12px;
+            font-size: 10px;
             color: #000000bd;
             text-anchor: end;
             text-transform: uppercase;
@@ -1501,8 +1642,8 @@ body{
         }
         
         .container-informacao .text-1 {
-            padding-left: 39px;
-            font-size: 12px;
+            padding-left: 18px;
+            font-size: 10px;
             color: #000000bd;
             text-anchor: end;
             text-transform: uppercase;
@@ -1517,7 +1658,7 @@ body{
             position: relative;
             gap: 5px;
             padding-left: 5.5%;
-            width: 40%;
+            width: 50%;
             height: 100%;
             background: #eeeeee;
             clip-path: polygon(12.5% 0, 100% 0, 100% 100%, 0 100%);
@@ -1536,11 +1677,11 @@ body{
             height: 100%;
             background: #EEEEEE;
             /* box-shadow: inset 0px 6px 11px #00000059; */
-            clip-path: polygon(0 0, 100% 0%, 91% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 88.9% 100%, 0 100%);
         }
         
         .container-titulo h1 {
-            font-size: 56px;
+            font-size: 46px;
             color: #213E98;
             font-family: Arial, Helvetica, sans-serif;
             font-style: italic;
@@ -1616,13 +1757,6 @@ body{
         position: absolute;
         left: 10px;
         width: 32px;
-    }
-    
-    .container-titulo h1 {
-        font-size: 54px;
-        color: #213E98;
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: italic;
     }
     
     .container-home {
@@ -1865,11 +1999,11 @@ body{
     }
 
     .container-informacao .text-1{
-        font-size: 12px;
+        font-size: 10px;
     }
     
     .container-informacao .text-2{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .container-portal section .container-titulo {
@@ -1901,14 +2035,53 @@ body{
         position: relative;
         display: none;
         background: #fff;
-        width: 85%;
-        height: 350px;
+        width: 90%;
+        height: 400px;
         border-radius: 10px;
         padding: 30px;
         overflow: hidden;
         align-items: center;
         transition: 0.5s;
         border: 1px solid white;
+    }
+
+    .caixa-app .corte-app {
+        position: absolute;
+        width: 200px;
+        height: 226px;
+        background: #213e98;
+        right: -74px;
+        top: -128px;
+        transform: rotate(307deg);
+    }
+    
+    .caixa-app .fechar-app {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 16px;
+        right: 12px;
+        cursor: pointer;
+    }
+
+    .box-info-app h1 {
+        font-size: 18px;
+        color: #213e98;
+        font-family: math;
+        letter-spacing: 6px;
+    }
+
+    .organizar-colunar div h3 {
+        color: #213e98;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+
+    .organizar-colunar div p {
+        padding-left: 10px;
+        font-weight: 600;
+        font-size: 12px;
     }
 
     .container-body {
@@ -2140,23 +2313,13 @@ body{
         display: none;
         background: #fff;
         width: 100%;
-        height: 350px;
+        height: 400px;
         border-radius: 10px;
         padding: 20px;
         overflow: hidden;
         align-items: center;
         transition: 0.5s;
         border: 1px solid white;
-    }
-    
-    .caixa-app .circulo-app {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        background: #213E98;
-        border-radius: 20px;
-        right: -215px;
-        bottom: -335px;
     }
     
     .caixa-app .faixa-app {
@@ -2179,7 +2342,7 @@ body{
     }
     
     .caixa-app .box-img-app {
-        width: 40%;
+        width: 30%;
         height: 250px;
         background: linear-gradient(209deg, #213e98, #172d5c);
         border-radius: 10px;
@@ -2195,17 +2358,24 @@ body{
     
     .container-organizar .box-info-app {
         width: 60%;
-        height: 250px;
+        height: 210px;
+        top: 0;
         position: relative;
-        top: 14px;
-        padding-left: 20px;
+        padding-left: 16px;
     }
     
     .box-info-app h1 {
-        font-size: 28px;
+        font-size: 14px;
         color: #213e98;
         font-family: math;
         letter-spacing: 6px;
+    }
+
+    .organizar-colunar div h3 {
+        color: #213e98;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 13px;
     }
     
     .container-organizar .organizar-colunar {
@@ -2214,8 +2384,9 @@ body{
         height: 70%;
         flex-direction: column;
         gap: 16px;
-        justify-content: center;
+        justify-content: flex-start;
         padding-left: 0px;
+        padding-top: 12px;
     }
     
     .organizar-colunar div p {
@@ -2233,25 +2404,15 @@ body{
         cursor: pointer;
     }
 
-    .caixa-app .circulo-app {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        background: #213E98;
-        border-radius: 20px;
-        right: -253px;
-        bottom: -335px;
-    }
-
     .caixa-app .buttom-acessar {
         width: fit-content;
         height: fit-content;
         font-size: 30px;
-        padding: 10px;
+        padding: 10px 20px;
         color: white;
         position: absolute;
         right: 15px;
-        bottom: 5px;
+        bottom: 15px;
         cursor: pointer;
         transition: 0.3s;
     }
@@ -2442,10 +2603,32 @@ body{
         padding: 20px;
         position: relative;
         display: none;
-        overflow: hidden;
+        overflow: none;
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+    .Container-outros .fechar-manual{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: auto;
+        top: -41px;
+        right: -12px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        background: #3150b1;
+        border-radius: 100%;
+        border: 2px solid white;
+        transition: 0.3s;
+    }
+
+    .Container-outros .fechar-manual:hover {
+        transform: scale(1.1);
     }
     
     .Container-outros .linha{
@@ -2751,7 +2934,7 @@ body{
     /* ---------------------- </home> ----------------------------- */
 }
 
-@media (max-width:480px){
+@media (min-width:356px) and (max-width:480px){
     /* ---------------------- <header> ----------------------------- */
     .container-home {
         padding: 30px 20px;
@@ -2774,23 +2957,13 @@ body{
         display: none;
         background: #fff;
         width: 100%;
-        height: 350px;
+        height: 413px;
         border-radius: 10px;
         padding: 20px;
         overflow: hidden;
         align-items: center;
         transition: 0.5s;
         border: 1px solid white;
-    }
-    
-    .caixa-app .circulo-app {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        background: #213E98;
-        border-radius: 20px;
-        right: -215px;
-        bottom: -335px;
     }
     
     .caixa-app .faixa-app {
@@ -2813,8 +2986,8 @@ body{
     }
     
     .caixa-app .box-img-app {
-        width: 40%;
-        height: 250px;
+        width: 75%;
+        height: 80px;
         background: linear-gradient(209deg, #213e98, #172d5c);
         border-radius: 10px;
         top: 14px;
@@ -2830,30 +3003,40 @@ body{
     .caixa-app .container-organizar {
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 40px;
     }
     
     .container-organizar .box-info-app {
-        width: 60%;
-        height: 250px;
+        width: 100%;
+        height: 200px;
         position: relative;
         top: 14px;
-        padding-left: 20px;
+        padding-left: 0px;
+        padding-top: 20px;
     }
     
     .box-info-app h1 {
-        font-size: 28px;
+        font-size: 16px;
         color: #213e98;
         font-family: math;
         letter-spacing: 6px;
+    }
+
+    .organizar-colunar div h3 {
+        color: #213e98;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 14px;
     }
     
     .container-organizar .organizar-colunar {
         display: flex;
         width: 100%;
         height: 70%;
+        padding-top: 12px;
         flex-direction: column;
         gap: 16px;
-        justify-content: center;
+        justify-content: flex-start;
         padding-left: 0px;
     }
     
@@ -2872,25 +3055,15 @@ body{
         cursor: pointer;
     }
 
-    .caixa-app .circulo-app {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        background: #213E98;
-        border-radius: 20px;
-        right: -253px;
-        bottom: -335px;
-    }
-
     .caixa-app .buttom-acessar {
         width: fit-content;
         height: fit-content;
         font-size: 30px;
-        padding: 10px;
+        padding: 10px 20px;
         color: white;
         position: absolute;
         right: 15px;
-        bottom: 5px;
+        bottom: 15px;
         cursor: pointer;
         transition: 0.3s;
     }
@@ -2932,10 +3105,32 @@ body{
         padding: 20px;
         position: relative;
         display: none;
-        overflow: hidden;
+        overflow: none;
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+    .Container-outros .fechar-manual{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: auto;
+        top: -64px;
+        right: -9px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        background: #3150b1;
+        border-radius: 100%;
+        border: 2px solid white;
+        transition: 0.3s;
+    }
+
+    .Container-outros .fechar-manual:hover{
+        transform: scale(1.1);
     }
     
     .Container-outros .linha{
@@ -3141,7 +3336,7 @@ body{
         font-family: system-ui;
         font-optical-sizing: auto;
         font-style: normal;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 600;
         letter-spacing: 0.1px;
     }
@@ -3303,7 +3498,7 @@ body{
     
     .container-informacao .text-1 {
         padding-left: 14px;
-        font-size: 9px;
+        font-size: 8px;
         color: #000000bd;
         text-anchor: end;
         text-transform: uppercase;
@@ -3314,7 +3509,7 @@ body{
     }
     
     .container-informacao .text-2 {
-        font-size: 9px;
+        font-size: 8px;
         color: #000000bd;
         text-anchor: end;
         text-transform: uppercase;
@@ -3511,7 +3706,7 @@ body{
         height: 100%;
         right: 9px;
         position: relative;
-        font-size: 9px;
+        font-size: 8px;
         flex-direction: column;
         align-content: center;
         justify-content: center;
@@ -3537,6 +3732,811 @@ body{
         width: 65px;
     }
     /* ---------------------- </home> ----------------------------- */
+}
+
+@media (max-width:355px){
+    /* ---------------------- <header> ----------------------------- */
+    .container-home {
+        padding: 30px 20px;
+        gap: 30px;
+        height: 100vh;
+        padding-bottom: 10vh;
+    }
+
+    .escurece-tela {
+        display: none;
+        overflow-y: auto;
+        padding: 30px 20px;
+        padding-top: 108px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .escurece-tela .caixa-app {
+        position: relative;
+        display: none;
+        background: #fff;
+        width: 100%;
+        height: 413px;
+        border-radius: 10px;
+        padding: 20px;
+        overflow: hidden;
+        align-items: center;
+        transition: 0.5s;
+        border: 1px solid white;
+    }
+    
+    .caixa-app .faixa-app {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background: #213e98;
+        left: 0;
+        top: -68px;
+    }
+    
+    .caixa-app .corte-app {
+        position: absolute;
+        width: 200px;
+        height: 226px;
+        background: #213e98;
+        right: -74px;
+        top: -170px;
+        transform: rotate(307deg);
+    }
+    
+    .caixa-app .box-img-app {
+        width: 75%;
+        height: 80px;
+        background: linear-gradient(209deg, #213e98, #172d5c);
+        border-radius: 10px;
+        top: 14px;
+        position: relative;
+    }
+    
+    .caixa-app .box-img-app img {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(-2px 2px 1px #fff);
+    }
+
+    .caixa-app .container-organizar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+    
+    .container-organizar .box-info-app {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        top: 14px;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    
+    .box-info-app h1 {
+        font-size: 16px;
+        color: #213e98;
+        font-family: math;
+        letter-spacing: 6px;
+    }
+
+    .organizar-colunar div h3 {
+        color: #213e98;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    
+    .container-organizar .organizar-colunar {
+        display: flex;
+        width: 100%;
+        height: 70%;
+        padding-top: 12px;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
+    
+    .organizar-colunar div p {
+        padding-left: 0px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .caixa-app .fechar-app {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 13px;
+        right: 7px;
+        cursor: pointer;
+    }
+
+    .caixa-app .buttom-acessar {
+        width: fit-content;
+        height: fit-content;
+        font-size: 30px;
+        padding: 10px 20px;
+        color: white;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .escurece-tela .manuais-wifi{
+        display: none;
+        width: 100%;
+        height: 400px;
+        gap: 40px;
+        padding: 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .manuais-wifi .corte {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        background: #213e98;
+        transform: rotate(219deg);
+        right: -340px;
+        top: -371px;
+        z-index: 1;
+    }
+
+    .manuais-wifi .box-img {
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+    }
+
+    .Container-outros {
+        width: 100%;
+        height: auto;
+        min-height: 160px;
+        background: #213e98;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        display: none;
+        overflow: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Container-outros .fechar-manual{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: auto;
+        top: -64px;
+        right: -9px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        background: #3150b1;
+        border-radius: 100%;
+        border: 2px solid white;
+        transition: 0.3s;
+    }
+
+    .Container-outros .fechar-manual:hover{
+        transform: scale(1.1);
+    }
+    
+    .Container-outros .linha{
+        width: 13%;
+        height: 2px;
+        border-radius: 5px;
+        background: white;
+        position: absolute;
+        top: 9px;
+    }
+    
+    .Container-outros .container-agrupar {
+        width: 100%;
+        height: auto;
+        background: #172d5c;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        overflow: auto;
+        align-items: flex-start;
+    }
+    
+    .container-agrupar div {
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 10px;
+        transition: 0.3s;
+        justify-content: space-evenly;
+        padding-bottom: 8px;
+    }
+    
+    .container-agrupar div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .escurece-tela .container-recados {
+        display: none;
+        width: 100%;
+        height: 290px;
+        background: #213e98;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 1px #213e983b;
+        padding: 20px;
+        position: relative;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .container-recados .fechar-manual{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: auto;
+        bottom: -16px;
+        right: -12px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        background: #3150b1;
+        border-radius: 100%;
+        border: 2px solid white;
+        transition: 0.3s;
+    }
+
+    .container-recados .fechar-manual:hover{
+        transform: scale(1.1);
+    }
+    
+    .container-recados .camera {
+        width: 32px;
+        height: 38px;
+        background: rgb(33 62 152);
+        position: absolute;
+        border-radius: 100%;
+        left: 0px;
+    }
+    
+    .camera div {
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background: #12255e;
+        position: absolute;
+        left: 12px;
+        box-shadow: inset 0px 0px 4px 1px #10101000;
+        bottom: 13px;
+    }
+    
+    .container-recados .container-tela {
+        width: 100%;
+        height: 100%;
+        background: #ebeaff;
+        border-radius: 14px;
+    }
+    
+    .container-tela .barra-phone {
+        width: 100%;
+        height: 20px;
+        background: #213e98b8;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        display: flex;
+        padding-right: 10px;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+    }
+    
+    .barra-phone span{
+        font-size: 12px;
+        font-family: monospace;
+        color: white;
+    }
+    
+    .barra-phone .hora{
+        position: absolute;
+        left: 10px;
+    }
+    
+    .barra-phone .sms{
+        position: absolute;
+        left: 48px;
+    }
+    
+    .container-tela .cab-facape {
+        width: 100%;
+        height: 32px;
+        background: #3150b1;
+        display: flex;
+        align-items: center;
+        padding-left: 9px;
+        position: relative;
+    }
+    
+    .cab-facape span{
+        color: white;
+        font-weight: 500;
+        padding-left: 10px;
+    }
+    
+    .cab-facape .bin{
+        position: absolute;
+        right: 10px;
+    }
+    
+    .cab-facape .msg{
+        position: absolute;
+        right: 32px;
+    }
+    
+    .container-tela .container-msg {
+        width: 100%;
+        height: 80%;
+        padding-left: 20px;
+        padding-top: 12px;
+        padding-right: 20px;
+        padding-bottom: 12px;
+        background: #172d5c;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        overflow: auto;
+        gap: 20px;
+        display: grid;
+    }
+    
+    .container-msg .box-msg {
+        width: 100%;
+        height: 175px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 5px 1px #213e983b;
+        background: #f1f0ff;
+        padding: 20px;
+        overflow-y: auto;
+        border-radius: 10px;
+    }
+    
+    .container-recados ::-webkit-scrollbar{
+        width: 5px;
+        background: #d4d1ff;
+    }
+    
+    .container-recados ::-webkit-scrollbar-thumb{
+        width: 5px;
+        border-radius: 5px;
+        background-color: #213e98;
+    }
+    
+    .box-msg span {
+        font-family: system-ui;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+    }
+    
+    .container-recados .container-buttons {
+        width: 80px;
+        position: absolute;
+        bottom: 2px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container-buttons img{
+        width: 14px;
+    }
+
+    .escurece-tela .container-conteudo-mobile {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: #eeeeee;
+        border-radius: 10px;
+    }
+
+    .escurece-tela .container-conteudo-mobile .topicos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .topicos h5 {
+        padding: 25px 19px;
+        padding-left: 22%;
+        font-size: 12px;
+    }
+
+    .topicos h5 img {
+        width: 28px;
+    }
+
+    .facape-icon {
+        width: 24px !important;
+        height: 22px !important;
+    }
+
+    .escurece-tela .container-conteudo-mobile .fechar-manual {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 19px;
+        right: 18px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        background: #3150b1;
+        border-radius: 100%;
+        border: 2px solid white;
+    }
+
+    .escurece-tela .container-conteudo-mobile h1 img {
+        width: 34px;
+    }
+
+    .escurece-tela .container-conteudo-mobile h1 {
+        display: flex;
+        background: #3150b1;
+        color: white;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 10px 14px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        align-items: center;
+    }
+
+    .container-header {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background: transparent;
+    }
+
+    .container-header .container-portal {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+        background: transparent;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .container-portal section {
+        display: flex;
+        width: 100%;
+        height: 59%;
+    }
+    
+    .container-portal section .container-circulo {
+        width: 89px;
+        height: 74px;
+        background: #213e98;
+        border-radius: 50%;
+        position: absolute;
+        left: -11px;
+        z-index: 1;
+        top: -4px;
+        transform: scale(1.3);
+    }
+    
+    .container-portal section .container-titulo {
+        right: 0px; 
+        padding: 0px 0px 0px 10%;
+    }
+    .container-portal section .container-img {
+        width: 100px;
+        height: 100%;
+        background: transparent;
+        z-index: 2;
+    }
+    
+    .container-img img {
+        width: 82px;
+        height: 82px;
+        z-index: 1;
+        top: -9px;
+        left: -1px;
+        position: absolute;
+    }
+    
+    .container-titulo h1 {
+        font-size: 20px;
+        color: #213E98;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        transition: 1s;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    
+    .container-portal .container-informacao {
+        padding-left: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 50px;
+        width: auto;
+        height: 68%;
+    }
+    
+    .container-informacao .text-1 {
+        padding-left: 14px;
+        font-size: 7px;
+        color: #000000bd;
+        text-anchor: end;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-style: italic;
+        font-weight: 600;
+        transition: 1s;
+    }
+    
+    .container-informacao .text-2 {
+        font-size: 7px;
+        color: #000000bd;
+        text-anchor: end;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-style: italic;
+        font-weight: 600;
+        transition: 1s;
+    }
+    
+    .container-informacao .circulo {
+        background: #213E98;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        right: 15px;
+        bottom: 14px;
+        transition: 0.5s;
+    }
+        
+    /* ---------------------- </header> ----------------------------- */
+     /* ---------------------- <home> ----------------------------- */
+     .container-body {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 30px;
+        transition: 0.5s;
+        flex-direction: column;
+    }
+
+    .container-body .container-right {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .container-body .container-left {
+        display: none;
+    }
+
+    .container-right .container-conteudo{
+        display: none;
+    }
+
+    .container-coluna .container-manual{
+        display: none;
+    }
+
+    .container-right .container-coluna{
+        display: none;
+    }
+
+    .container-right .corte {
+        display: flex;
+        position: absolute;
+        width: 600px;
+        height: 810px;
+        background: #213e98;
+        right: -593px;
+        bottom: -229px;
+        left: auto;
+        transform: rotate(264deg);
+        box-shadow: inset 0px 0px 0px 4px #9fa6e945;
+    }
+
+    .button-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-right .buttom-container-ativar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 9px 18px;
+        font-size: 12px;
+        gap: 10px;
+        background: #213e98;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.2s;
+        font-weight: 900;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    .container-right .buttom-container-ativar:hover{
+        transform: scale(1.05);
+    }
+
+    .container-right .buttom-container-ativar:active{
+        transform: scale(0.9);
+    }
+
+    .buttom-container-ativar button{
+        display: flex;
+    }
+
+    .buttom-container-ativar img {
+        width: 30px;
+    }
+
+    .midias-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        border-radius: 3px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .midias-mobile div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 18.3%;
+        border-radius: 100%;
+        box-shadow: 0px 0px 3px 0px #00000075;
+        cursor: pointer;
+        transition: 0.2s;
+        background: linear-gradient(207deg, #00000045, transparent, #2053b7);
+        border-top: 1px solid white;
+    }
+
+    .midias-mobile div:hover{
+        transform: scale(1.1);
+    }
+
+    .midias-mobile div:active{
+        transform: scale(0.9);
+    }
+
+    .midias-mobile div img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .rodape {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background: #eeeeee;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+    .rodape .rodape-circulo {
+        position: absolute;
+        width: 35%;
+        height: 193px;
+        right: -19px;
+        background: #213e98;
+        top: -57px;
+        transform: rotate(201deg);
+    }
+
+    .rodape .rodape-corte {
+        display: flex;
+        position: absolute;
+        width: 120px;
+        height: 200px;
+        background: #213e98;
+        transform: rotate(202deg);
+        left: -102px;
+        top: -52px;
+    }
+    
+
+    .rodape .text-rodape {
+        display: flex;
+        width: 80%;
+        height: 100%;
+        position: relative;
+        font-size: 7px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        font-family: system-ui;
+        color: #213e98;
+        font-weight: 600;
+        right: 3px;
+    }
+    
+
+    .rodape .nti-logo {
+        display: flex;
+        width: 20%;
+        height: 100%;
+        color: white;
+        z-index: 1;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        font-size: 10px;
+        justify-content: center;
+        right: 10px;
+        position: relative;
+    }
+
+    .nti-logo img{
+        width: 50px;
+    }
 }
 
 /* ------------------- </Responsividade> --------------------------*/
