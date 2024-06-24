@@ -16,7 +16,6 @@ body{
     background: #213E98;
     overflow-y: auto;
     padding: 30px;
-    padding-bottom: 10vh;
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -1769,7 +1768,6 @@ body{
         background: #213E98;
         overflow-y: auto;
         padding: 20px;
-        padding-bottom: 10vh;
         gap: 20px;
         display: flex;
         flex-direction: column;
@@ -1962,7 +1960,6 @@ body{
         background: #213E98;
         overflow-y: auto;
         padding: 30px;
-        padding-bottom: 20vh;
         gap: 30px;
         display: flex;
         flex-direction: column;
@@ -2168,7 +2165,6 @@ body{
     .container-home {
         gap: 30px;
         height: 100vh;
-        padding-bottom: 10vh;
     }
 
     .container-header {
