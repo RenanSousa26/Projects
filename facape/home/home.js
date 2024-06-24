@@ -104,4 +104,9 @@ window.addEventListener("resize", function() {
     if (window.innerWidth > 767 && appsMobile.style.display == "flex") {
         fechar();
     }
+
+    if (window.innerWidth > 767 && (academicoMobile.style.display == "flex" || financeiroMobile.style.display == "flex" || 
+        linksMobile.style.display == "flex" || configuracoesMobile.style.display == "flex")){
+        fechar();
+    }
 });
