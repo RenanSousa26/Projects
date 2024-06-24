@@ -1962,7 +1962,7 @@ body{
         background: #213E98;
         overflow-y: auto;
         padding: 30px;
-        padding-bottom: 10vh;
+        padding-bottom: 20vh;
         gap: 30px;
         display: flex;
         flex-direction: column;
